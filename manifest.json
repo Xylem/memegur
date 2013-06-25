@@ -1,7 +1,7 @@
 ﻿{
     "manifest_version": 2,
     "name": "Memegur",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Allows you to easily rehost memes to Imgur",
     "background": {
         "scripts": [
