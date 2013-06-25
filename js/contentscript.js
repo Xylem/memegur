@@ -21,6 +21,14 @@
         memesnap: {
             pattern: /^(?:https?:\/\/)?(?:www\.)?memesnap.com\/meme\/view\/[a-z-]+\/[a-zA-Z0-9]+\/?$/,
             url: function() { return jq("div.row div.span7 img.thumbnail").attr("src"); }
+        },
+        memedad: {
+            pattern: /^(?:https?:\/\/)?(?:www\.)?memedad.com\/meme\/[0-9]+$/,
+            url: function() { return jq("#meme").attr("src"); }
+        },
+        memegenerator: {
+            pattern: /^(?:https?:\/\/)?(?:www\.)?memegenerator.net\/instance\/[0-9]+$/,
+            url: function() { return jq("div.instance div.left > img").attr("src"); }
         }
     };
 
